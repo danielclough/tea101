@@ -1,0 +1,131 @@
+html.narrow div {
+	background-size: contain;
+}
+
+h1, h2, h3, h4, h5 {
+	font-color:black;
+}
+
+em {
+	font-size: 150%;
+}
+
+small {
+	font-size: 130%;
+}
+
+.mySlides {
+	position: relative;
+}
+
+.slides {
+	font-size:80%;
+}
+
+@media screen and (max-width: 992px) {
+.slides {
+	font-size:100%;
+}}
+
+.back {
+	background-color: rgba(255,255,255,0.6);;
+}
+
+/*
+########################
+## Immodestea-Logo    ##
+########################
+*/
+
+#immodestea-logo img {
+	width: 60% !important;
+	border: none !important;
+	padding: 2% 2% 2% 2% ;
+    top: 50%;
+    margin-left: -25%;
+    margin-right: 75%;
+    transform: translate(-50%, -50%)
+    display:block;
+
+}
+@media screen and (max-width: 992px) {
+	#immodestea-logo img {
+	width: 80% !important;
+		padding: 2% 2% 2% 2% !important ;
+		margin-top:-40%;
+		margin-bottom: 60%;
+    margin-left: 0%;
+    margin-right: 0%; 
+	}}
+
+#immodestea-text {
+	padding: 5% 0 1% 5%;
+	    margin: 0;
+    position: absolute;
+    top: 50%;
+    margin-left: 80%;
+    margin-right: -20%;
+    transform: translate(-50%, -50%)
+  }
+
+@media screen and (max-width: 992px) {
+	#immodestea-text {
+	width: 95% !important;
+    top: 70%;
+    margin-left: 50%;
+    margin-right: 50%;    
+	font-size: 200%; 	
+	}}
+
+#immodestea-text ul {
+	font-size: 75%;
+}
+
+/*
+####################
+## Harney-Logo    ##
+####################
+*/
+
+#harney-logo img {
+	width: 75% !important;
+	border: none !important;
+	padding: 2% 2% 2% 2% ;
+    top: 50%;
+    margin-left: -25%;
+    margin-right: 75%;
+    transform: translate(-50%, -50%)
+    display:block;
+}
+@media screen and (max-width: 992px) {
+	#harney-logo img {
+	width: 95% !important;
+		padding: 2% 2% 2% 2% !important ;
+		margin-top:-20%;
+		margin-bottom: 70%;
+    margin-left: 0%;
+    margin-right: 0%; 		
+	}}
+
+#harney-text {
+	padding: 15% auto 1% auto !important;
+	    margin: 0;
+    position: absolute;
+    top: 50%;
+    margin-left: 80%;
+    margin-right: -20%;
+    transform: translate(-50%, -50%)
+}
+
+@media screen and (max-width: 992px) {
+	#harney-text {
+	width: 95% !important;
+    top: 60%;
+    margin-left: 50%;
+    margin-right: 50%;    
+	font-size: 200%;
+	}}
+
+#harney-text ul {
+	font-size: 75%;
+}

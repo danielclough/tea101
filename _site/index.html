@@ -1,0 +1,748 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+		link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-autoslide="900000"> <!-- 60000 = 1min, 900000 = 15min -->
+
+					<div class="mySlides" id="immodestea-logo">		
+					  <img data-src="img/immodestea-logo.png" >
+					  <div id="immodestea-text">
+					  	<h5> Presenter: </h5>
+					  	<h3> Daniel Clough </h3>
+					  	<ul>
+						  	<li> Chinese Tea Specialist</li>
+						  	<li> Intl. Trade and Wholesale </li>
+						  	<li> Staff and Individual Training </li>
+						  	<li> Educational Tours </li>
+						  	<li> Private Events </li>
+						  </ul>
+					  </div>
+					</div>
+
+					<div class="mySlides" id="harney-logo">
+					  <img data-src="img/harney-logo.png"> 
+					  <div id="harney-text">
+					  	<h3> Yukino Aoshima </h3>
+					  	<ul>
+						  	<li> Japanese Tea Specialist</li>
+						  	<li> Wholesale and Food Service </li>
+						  	<li> Staff and Individual Training </li>
+						  </ul>
+					  </div>
+					</div>
+
+					<div class="mySlides" id="library-logo">
+					  <img data-src="img/library-logo.png">
+					</div>
+					<div class="mySlides"> <h1>Fall Fest</h1> </div>
+					<div class="mySlides"> <h1>Holiday Tea Class</h1> </div>
+					<div class="mySlides"> <h1>Books</h1></div>
+					<div class="mySlides"> <h1>Welcome Bev</h1></div>
+
+
+					<script>
+						var myIndex = 0;
+						carousel();
+
+						function carousel() {
+						  var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  for (i = 0; i < x.length; i++) {
+						    x[i].style.display = "none";  
+						  }
+						  myIndex++;
+						  if (myIndex > x.length) {myIndex = 1}    
+						  x[myIndex-1].style.display = "block";  
+						  setTimeout(carousel, 6000); 
+						}
+					</script>
+				</section>
+
+
+				<section> 
+					<section  data-background="img/tea/tea-plant.jpg">
+
+						<!-- Title: Chinese Gong
+						License: Attribution 3.0 
+						Recorded by Daniel Simon -->
+						 <audio data-autoplay data-src="audio/chinese-gong-daniel_simon.wav"></audio>
+
+						<h1 class="fragment back">Tea is a plant</h1>
+						<div class="fragment back">
+							<h2>Camellia sinensis</h2>
+							<p>The One and Only "Tea Plant"</p>
+						</div>
+					</section>	
+					<section data-background-iframe="https://en.wikipedia.org/wiki/Camellia_sinensis">
+					</section>	
+				</section>
+
+				<section>
+					<section data-background="img/tea/gallery.jpg">
+						<div class="fragment back">
+							<h1>How Many</h1>
+							<h3>Major Styles of Production?</h3>
+							<h2 class="fragment">Green, Wulong, Black</h2>
+							<p class="fragment">Also, White, Yellow, Red, Darjeeling, Orthodox Indian, CTC, and flavored teas.</p>
+						</div>
+					</section>		
+
+					<section data-background-iframe="https://en.wikipedia.org/wiki/Tea_processing">
+					</section>		
+				</section>	
+
+				<section>
+					<section id="fragments" data-background="img/tea/green/green-sencha.jpg">
+						<div class="fragment back">
+							<h1>Green</h1>	
+							<h3 class="fragment">Oxidation quickly "fixed" with heat.</h3>
+							<p>Japanese Sencha - Steamed</p>
+							<table>
+								<thead>
+									<tr>
+										<th>Style:</th>
+										<th>Weight</th>
+										<th>Volume</th>
+										<th>Temp</th>
+										<th>Time</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Cup</td>
+										<td>2.5g</td>
+										<td>12 oz</td>
+										<td>160°-175°</td>
+										<td>1-3 min</td>
+									</tr>
+									<tr>
+										<td>Pot</td>
+										<td>10g</td>
+										<td>32 oz</td>
+										<td>160°-175°</td>
+										<td>1-3 min</td>
+									</tr>
+									<tr>
+										<td>Kyusu</td>
+										<td>3g-5g</td>
+										<td>300ml</td>
+										<td>160°-175°</td>
+										<td>30 sec - 3 brews</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>											
+					</section>		
+					<section data-background-iframe="https://en.wikipedia.org/wiki/Green_tea	">
+					</section>			
+				</section>
+
+				<section>
+					<section id="fragments" data-background="img/tea/wulong/aged-tieguanyin.jpg">
+						<div class="fragment back">
+							<h1>Wulong</h1>
+							<h3 class="fragment">Oxidation fixed after processing.</h3>
+							<p>Tie Guan Yin - Lightly Oxidized</p>
+							<table>
+								<thead>
+									<tr>
+										<th>Style:</th>
+										<th>Weight</th>
+										<th>Volume</th>
+										<th>Temp</th>
+										<th>Time</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Cup</td>
+										<td>3.5g</td>
+										<td>12 oz</td>
+										<td>175°-212°</td>
+										<td>3-4 min</td>
+									</tr>
+									<tr>
+										<td>Pot</td>
+										<td>10g</td>
+										<td>32 oz</td>
+										<td>175°-212°</td>
+										<td>3-4 min</td>
+									</tr>
+									<tr>
+										<td>Gongfu</td>
+										<td>5g-7g</td>
+										<td>175ml</td>
+										<td>190°</td>
+										<td>rinse, 25 sec, 6 steeps</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section data-background-iframe="	">
+					</section>			
+				</section>
+
+
+
+				<section>
+					<section id="fragments" data-background="img/tea/red/jinjunmei.jpg">
+						<div class="fragment back">
+							<h1>English "Black"</h1>
+							<p class="fragment">"Black Tea" in the west is <em>"Red Tea"</em> in China and Japan. </p>
+							<h3 class="fragment">Fully Oxidized</h3>
+							<p>Jin Jun Mei - The Most Perfect Chinese Red Tea</p>
+							<table>
+								<thead>
+									<tr>
+										<th>Style:</th>
+										<th>Weight</th>
+										<th>Volume</th>
+										<th>Temp</th>
+										<th>Time</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Cup</td>
+										<td>3.5g</td>
+										<td>12 oz</td>
+									<td>208°-212°</td>
+									<td>5 min</td>
+									</tr>
+									<tr>
+										<td>Pot</td>
+										<td>10g</td>
+										<td>32 oz</td>
+										<td>208°-212°</td>
+										<td>5 min</td>
+									</tr>
+									<tr>
+										<td>Gongfu</td>
+										<td>3g-5g </td>
+										<td> 175ml </td>
+										<td>208°-212°</td>
+										<td>20 sec, 6 steeps</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section id="fragments" data-background="img/tea/red/jinjunmei.jpg">
+						<div class="fragment back">
+							<h2> Jin Jun Mei </h2>
+							<p> In the early years of the 21st century, there was a 24th generation tea farmer named Jiang Yuan Xun, whose name literally means “the light which leads the river”. He was sitting on an overstock of Zheng Shan Xiao Zhong, the traditional tea of his region, a style of tea famous the world over for being the original red tea, yet it’s smokiness deemed it unpalatable by Chinese standards. <br/>
+							In 2005, Master Jiang released Jin Jun Mei to the world creating not only the first red tea to be highly valued by Chinese, but one of the most highly valued teas of all time. Every step in it’s process requires the careful touch of masterful hands from the picking of only the finest of the first flush all the way through to the finished product. </p>
+						</div>
+					</section>
+					<section id="fragments" data-background="img/tea/red/red-golden-assam.jpg">
+						<div class="fragment back">
+							<h2> Golden Assam </h2>
+							<p> A rare treat from Assam, comprised of nearly 100% golden tips. The Jalan family are the producers of this Mokalbari East, and they made the best Assams in 2018. </p>
+
+							<p> MIKE'S TEA RATINGS: Briskness: 2; Body: 2; Aroma: 2.</p>
+							<p> Details: An exquisite and delicate Assam.
+							<p> Dry Leaves: Beautiful golden twists<p>
+							<p> Liquor: Dark brown<p>
+							<p> Aroma: Candied flowers<p>
+							<p> Caffeine Level: Yes<p>
+							<p> Body: Medium-bodied<p>
+							<p> Flavors: Sweet like a lilac candy <p>
+							<p> Brewing Time: 4 <p>
+							<p> Brewing Temp: 212º <p>
+						</div>
+					</section>
+
+					<section data-background-iframe="https://en.wikipedia.org/wiki/Black_tea">
+					</section>			
+				</section>
+
+
+				<section id="fragments" data-background="img/tea/lovestea.jpg"> 
+					<div class="fragment back">
+						<h2> Tasting</h2>
+						<p class="fragment"> Smell your tea </p>
+						<p class="fragment"> Taste your tea </p>
+						<p class="fragment"> Smell your cup </p>
+						<p class="fragment"> Be Thankful </p>
+					</div>
+				</section>				
+
+			<section>
+				<section id="fragments" data-background="img/tea/black/black-shoupuer.jpg">
+					<div class="fragment back">
+						<h1>Chinese Black</h1>
+						<h3 class="fragment">Oxidized AND <em>Fermented</em></h3>
+						<p>Shou Pu'er</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Style:</th>
+									<th>Weight</th>
+									<th>Volume</th>
+									<th>Temp</th>
+									<th>Time</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Cup</td>
+									<td>3.5g</td>
+									<td>8 oz</td>
+									<td>212°</td>
+									<td>5 min</td>
+								</tr>
+								<tr>
+									<td>Pot</td>
+									<td>10g</td>
+									<td>32 oz</td>
+									<td>212°</td>
+									<td>5 min</td>
+								</tr>
+								<tr>
+									<td>Gongfu</td>
+									<td>5g-7g</td>
+									<td>175ml</td>
+									<td>212°</td>
+									<td>rinse, flash</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				
+				<section data-background-iframe="https://en.wikipedia.org/wiki/Fermented_tea">
+				</section>			
+			</section>
+
+				<section id="fragments" data-background="img/tea/3.jpg"> 
+					<div class="fragment back">
+						<h2> Tasting</h2>
+					</div>
+				</section>
+
+
+				<section id="fragments" data-background="img/tea/white/white-baimudan-aged.jpg">
+					<div class="fragment back">
+						<h1>White</h1>
+						<h3 class="fragment">Unfired</h3>
+						<p>Aged Bai Mu Dan</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Style:</th>
+									<th>Weight</th>
+									<th>Volume</th>
+									<th>Temp</th>
+									<th>Time</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Cup</td>
+									<td>3.5g</td>
+									<td>12 oz</td>
+									<td>175°</td>
+									<td>3 min</td>
+								</tr>
+								<tr>
+									<td>Pot</td>
+									<td>10g</td>
+									<td>32 oz</td>
+									<td>175°</td>
+									<td>3 min</td>
+								</tr>
+								<tr>
+									<td>Gongfu</td>
+									<td>4g-6g</td>
+									<td>175ml</td>
+									<td>175°</td>
+									<td>30sec, 6 steeps</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+
+				<section data-background="img/tea/17.jpg"> 
+					<div class="back">
+						<h2> Tasting</h2>
+					</div>
+				</section>
+
+
+				<section id="fragments" data-background="img/tea/yellow/huangmudan.jpg">
+					<div class="fragment back">
+						<h1>Yellow</h1>
+						<h3 class="fragment">Piled, but not to the point of fermentation.</h3>
+						<p>Huang Mu Dan</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Style:</th>
+									<th>Weight</th>
+									<th>Volume</th>
+									<th>Temp</th>
+									<th>Time</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Cup</td>
+									<td>3.5g</td>
+									<td>8 oz</td>
+									<td>175°</td>
+									<td>3 min</td>
+								</tr>
+								<tr>
+									<td>Pot</td>
+									<td>10g</td>
+									<td>32 oz</td>
+									<td>175°</td>
+									<td>3 min</td>
+								</tr>
+								<tr>
+									<td>Gongfu</td>
+									<td>5g-7g</td>
+									<td>175ml</td>
+									<td>175°</td>
+									<td>25 sec, 6 steeps </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+				<section id="fragments" data-background="img/tea/darjeeling/darjeeling-1st-flush.jpg">
+					<div class="fragment back">
+						<h1>Darjeeling</h1>
+						<h3 class="fragment">Hard Wither</h3>
+						<p>Namring 1st Flush</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Style:</th>
+									<th>Weight</th>
+									<th>Volume</th>
+									<th>Temp</th>
+									<th>Time</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Cup</td>
+									<td>3.5g</td>
+									<td>8 oz</td>
+									<td>175°-212°</td>
+									<td>3-4 min</td>
+								</tr>
+								<tr>
+									<td>Pot</td>
+									<td>10g</td>
+									<td>32 oz</td>
+									<td>175°-212°</td>
+									<td>3-4 min</td>
+								</tr>
+								<tr>
+									<td>"Gongfu"</td>
+									<td>3g</td>
+									<td>150ml</td>
+									<td>190°-212°</td>
+									<td>20 sec, 4 steeps</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<section id="fragments" data-background="img/tea/green/green-flavored-2.jpg">
+					<div class="fragment back">
+						<h1>Flavored</h1>
+						<p class="fragment">Jasmine (flower scent)</p>
+						<p class="fragment">Masala Chai (spices)</p>
+						<p class="fragment">Ginseng (powder coating)</p>						
+						<p class="fragment">Earl Grey (oil)</p>
+						<p class="fragment">Harney's Paris (alcohol)</p>						
+					</div>
+				</section>
+
+
+				<section id="fragments" data-background="img/tea/tisane/rose-cornflower-cam.jpg"> 
+					<div class="fragment back">
+						<div class="fragment">
+							<p> Mint Tea </p>
+							<p> Barley Tea </p> 
+							<p> Rooibos Tea </p>
+						</div><br/>
+						<p class="fragment"> Not from the 'tea plant'! </p>
+						<h4 class="fragment"> Some would prefer to call them 'tisanes'. </h4> <br/>
+						<h2> Tea is a form.</h2>
+						<h3> Tasty Plant Water </h3>
+					</div>
+				</section>
+
+				<section id="fragments" data-background="img/tea/tisane/rose-cornflower-cam.jpg"> 
+					<div class="fragment back">
+						<h1> tisane (n.)</h1>
+						<p> medicinal tea (1931), from French tisane; <br/> earlier ptisan (14c.), from Latin ptisana, from Greek ptisane "crushed barley" </p>
+						<small class="fragment"> Source: https://www.etymonline.com/word/tisane </small>
+					</div>
+				</section>
+
+
+				<section id="fragments" data-background="img/tea/gallery.jpg"> 
+					<div class="fragment back">
+						<h1> Form Factors:</h1>
+						<h3> Powdered </h3>
+						<h3> Pressed </h3>
+						<h3> Packed </h3>
+						<h3> Loose Leaf </h3>
+						<h3> Bagged </h3>
+					</div>
+				</section>
+
+				<section id="fragments" data-background="img/tea/bags.jpg"> 
+					<div class="fragment back">
+						<h1> Bags</h1>
+						<p> Tea Bags were invented <em>by accident</em> by an American.</p>
+						<p> Standard "Tea Bag" is mostly used for broken, cut, or CTC tea </p>
+						<p> <em>"Sachet"</em> or "Pyramid Shaped Bags" are used for Whole Leaf Tea because they allow room for the tea to expand.</p> 
+					</div>
+				</section>	
+
+				<section id="fragments" data-background="img/tea/matcha.jpg"> 
+					<div class="fragment back">
+						<h1> Powdered</h1>
+						<p> </em>Matcha</em> is the latest iteration of the oldest existent form of tea.</p>
+						<p> The original powdered tea was first pressed for storage and powdered before drinking.</p>
+						<p><em>Real Matcha</em> is powdered <em>Tencha</em></p> 
+						<p><em>Shade Grown Green Tea</em></p>
+					</div>
+				</section>				
+
+				<section id="fragments" data-background="img/tea/pressed.jpg"> 
+					<div class="fragment back">
+						<h1> Pressed Tea</h1>
+						<p> Common in south west China. Far from the imperial powers.</p>
+						<p> Tea bricks were made illegal because they were used as money.</p>
+						<p>Common Shapes: Cake, Brick, Bowl, Coin</p>
+					</div>
+				</section>	
+
+				<section id="fragments" data-background="img/tea/packed.svg"> 
+					<div class="fragment back">
+						<h1> Packed Tea</h1>
+						<p> Packed loosely in baskets, or citrus rind.</p>
+						<p> Packed tight in bamboo</p>
+					</div>
+				</section>	
+
+				<section id="fragments" data-background="img/tea/tea-sorting.jpg"> 
+					<div class="fragment back">
+						<h1> Loose Leaf</h1>
+						<p> The most common form of specialty tea.</p>
+						<p> Developed after all the tea pressing factories were destroyed.</p>					
+					</div>
+				</section>	
+
+				<section id="fragments" data-background="img/tea/teabag-scale.svg"> 
+					<div class="fragment back">
+						<h1> Measurements </h1>
+						<h2> Volume vs Weight </h2>
+						<p> Teaspoon </p>
+						<p> Tea density and infusion rate vary widely depending on form factor.</p>					
+						<p> A gram scale can be useful useful.</p>
+						<p> Ratio of Pot to Leaf</p>
+						<p> Works especially well with small pots.
+						<p> </p>					
+					</div>
+				</section>	
+ 
+				<section id="fragments" data-background="img/tea/water-quality.jpg"> 
+					<div class="fragment back">
+						<h1> Quality of Water </h1>
+						<p> Where the tea is from. </p>
+						<p> Filter </p>
+						<p> Re: mineral</p>
+					</div>
+				</section>	
+
+				<section id="fragments" data-background="img/tea/brew-time.jpg"> 
+					<div class="fragment back">
+						<h1> Brewing Time</h1>
+						<p> Kind of Tea</p>
+						<p> Style of Brewing </p>
+						<p> Gongfu Style = Many Short Steeps </p>
+						<p> Sachet Bag = More Steeps than Tea Bag </p>					
+					</div>
+				</section>	
+
+				<section id="fragments" data-background="img/tea/temp-95.svg"> 
+					<div class="fragment back">
+						<h3> Water temperature </h3>
+						<p> Kind of tea. </p>
+						<p> Personal Preference </p>
+						<p> Lower Temp = Longer Time </p>
+					</div>
+				</section>	
+
+
+
+
+				<section id="fragments" data-background="img/equipment/equipment.jpg"> 
+					<div class="fragment back">
+						<h1> Equipment:</h1>
+						<h3> Mug and Filter </h3>
+						<h3> English Pot </h3>
+						<h3> Chinese Pot </h3>
+						<h3> Gaiwan </h3>
+						<h3> Kyusu </h3>
+						<h3> Matcha Bowl </h3>
+					</div>
+				</section>
+
+
+				<section id="fragments" data-background="img/equipment/mug-filter.svg"> 
+					<div class="fragment back">
+						<h1> Mug and Filter </h1>
+						<p> The easiest way to get into brewing Loose Leaf Tea!</p>
+						<p> A large 16oz Mug is especially nice to hold onto in the winter. </p>					
+					</div>
+				</section>	
+
+				<section id="fragments" data-background="img/equipment/english-pot.jpg"> 
+					<div class="fragment back">
+						<h1> English Pot </h1>
+						<p>  When served at a party with food it is quite convenient to use a larger pot. </p>
+						<p> "English Style" is often contrasted to "Gongfu Style" with the English representing the larger pot style of brewing. </p>
+						<p> Averaging 16oz-48oz of water with a few grams of tea.		
+					</div>
+				</section>	
+
+				<section id="fragments"  data-background="img/equipment/yixing-pot.svg"> 
+					<div class="fragment back">
+						<h1> Yixing Pot </h1>
+						<p> The most famous teapots in the world. They become more beautiful and taste better with use. </p>
+						<p> Gongfu Style:</p>
+						<p> Typically 175ml for one to four people.</p>					
+						<p> High ratio of Tea to Water with many short brews.</p>
+					</div>
+				</section>	
+
+				<section id="fragments"  data-background="img/equipment/gaiwan.svg"> 
+					<div class="fragment back">
+						<h1> Gaiwan </h1>
+						<p> Literally "Lidded" (Gai) "Bowl" (Wan)</p>
+						<p> Gongfu Style:</p>
+						<p> Typically 175ml for one to four people.</p>					
+						<p> High ratio of Tea to Water with many short brews.</p>					
+					</div>
+				</section>	
+
+				<section id="fragments" data-backround-repeat="repeat"  data-background="img/equipment/kyusu.svg"> 
+					<div class="fragment back">
+						<h1> Kyusu </h1>
+						<p> Common teapot in Japan.</p>
+						<p> Senchado: </p>	
+						<p>  </p>
+						<p> </p>											
+					</div>
+				</section>	
+
+				<section id="fragments"  data-background="img/equipment/matcha-bowl-whisk.svg"> 
+					<div class="fragment back">
+						<h1> Matcha Bowl </h1>
+						<p>  </p>
+						<p> </p>					
+					</div>
+				</section>	
+
+				<section> QUIZ
+					<script data-quiz>
+    quiz = {
+            "info": {
+                    "name":    "Test Your Knowledge!!",
+                    "main":    "Can you answer these common tea questions?",
+                    "level1":  "Tea Master",
+                    "level2":  "Tea Expert",
+                    "level3":  "Tea Amateur",
+                    "level4":  "Tea Novice",
+                    "level5":  "There is a lot to learn!" // no comma here
+            },
+            "questions": [
+                    { // Question 1 - Multiple Choice, Single True Answer
+                            "q": "Is 'Rooibos Tea' from the Tea Plant?",
+                            "a": [
+                                    {"option": "Yes!",      "correct": false},
+                                    {"option": "No! It is another plant!",     "correct": true} // no comma here
+                            ],
+                            "correct": "<p><span>That's right!</span> Although sometimes called 'Red Tea', rooibos is not related to the Camellia sinensis. <br/> It is however often enjoyed as a non-caffeinated alternative tea.</p>",
+                            "incorrect": "<p><span>Nope!</span>Although sometimes called 'Red Tea' rooibos is not related to the Camellia sinensis, 'the tea plant'. </p>" // no comma here
+                    },
+                    { // Question 2 - Multiple Choice, Single True Answer
+                            "q": "What Temp. Range for Green Tea?",
+                            "a": [
+                                    {"option": "208°-212°",      "correct": false},
+                                    {"option": "195°-208°",      "correct": false},
+                                    {"option": "175°-195°",      "correct": false},                                   {"option": "160°-175°",     "correct": true} // no comma here
+                            ],
+                            "correct": "<p><span>That's right!</span> Green Tea is easily 'burnt' or 'yellowed' with water which is too hot!</p>",
+                            "incorrect": "<p><span>Nope! 160°-175° is generally best for Green Tea! </span>Green Tea is easily 'burnt' or 'yellowed' with water which is too hot! </p>" // no comma here
+                    },                    
+                    // more questions here
+            ]
+    }
+</script>
+
+				</section>
+
+				<section> <h1> Questions? </h1> </section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+        { src: 'plugin/quiz/js/quiz.js', async: true, callback: function() { prepareQuizzes({}); } },
+        { src: 'plugin/reveal.js-menu/menu.js' }
+				]
+			});
+		</script>
+	</body>
+</html>
