@@ -60,67 +60,45 @@
  
 				<section data-autoslide="900000"> <!-- 60000 = 1min, 900000 = 15min -->
 
-					<div class="slide-container">
-						<div class="mySlides" >
-							<section class="slides" data-background-size="contain" data-background="img/tea.institute-logo.jpg">
-						</section>
-						<div class="mySlides" id="immodestea-logo" >		
-						  <img data-src="img/immodestea-logo.png" >
-						  <div id="immodestea-text">
-						  	<h4> Presenter: </h4>
-						  	<h2> Daniel Clough </h2>
-						  	<ul>
-							  	<li> Chinese Tea Specialist</li>
-							  	<li> Intl. Trade and Wholesale </li>
-							  	<li> Staff and Individual Training </li>
-							  	<li> Educational Tours </li>
-							  	<li> Private Events </li>
-							  	<li> Instagram: @Immodestea & @Tea.Institute </li>
-							  	<li> Facebook: @ImmodesteaLV & @Institute.Tea</li> 
-							  	<li> Immodestea.com </li>
-							  	<li> Tea.Institute  </li>
-							  </ul>
-						  </div>
-						</div>
-
-						<div class="mySlides" id="harney-logo">
-						  <img data-src="img/harney-logo.png"> 
-						  <div id="harney-text">
-						  	<h2> Yukino Aoshima </h2>
-						  	<ul>
-							  	<li> Harney and Sons Fine Teas, West Coast Sales </li>
-							  	<li> Japanese Tea Specialist</li>
-							  	<li> Wholesale and Food Service </li>
-							  	<li> Staff and Individual Training </li>
-							  	<li> Private Events </li>
-							  	<li> Instagram: @VegasTeaSomm </li>
-							  	<li> Harney.com </li>
-							  </ul>
-						  </div>
-						</div>
-					</div>
-
-					<script>
-						var myIndex = 0;
-						carousel();
-
-						function carousel() {
-						  var i;
-						  var x = document.getElementsByClassName("mySlides");
-						  for (i = 0; i < x.length; i++) {
-						    x[i].style.display = "none";  
-						  }
-						  myIndex++;
-						  if (myIndex > x.length) {myIndex = 1}    
-						  x[myIndex-1].style.display = "block";  
-						  setTimeout(carousel, 15000); 
-						}
-					</script>
-				</section> 
-
-				<section class="slides" data-background-size="contain" data-background="img/library-logo.jpg">
-				</section>
-
+					<section class="slides" data-background-size="contain" data-background="img/tea.institute-logo.jpg"></section> 
+						<section class="slides" data-background-size="contain" data-background="img/library-logo.jpg"></section>
+						<section  id="immodestea-logo" class="slides">
+							  <img data-src="img/immodestea-logo.png" >
+							  <div id="immodestea-text">
+							  	<h4> Presenter: </h4>
+							  	<h2> Daniel Clough </h2>
+							  	<ul>
+								  	<li> Chinese Tea Specialist</li>
+								  	<li> Intl. Trade and Wholesale </li>
+								  	<li> Staff and Individual Training </li>
+								  	<li> Educational Tours </li>
+								  	<li> Private Events </li>
+								  	<li> Instagram: @Immodestea & @Tea.Institute </li>
+								  	<li> Facebook: @ImmodesteaLV & @Institute.Tea</li> 
+								  	<li> Immodestea.com </li>
+								  	<li> Tea.Institute  </li>
+								  </ul>
+							  </div>						
+						</section> 
+						<section class="slides">
+							<div class="mySlides" id="harney-logo">
+							  <img data-src="img/harney-logo.png"> 
+							  <div id="harney-text">
+							  	<h2> Yukino Aoshima </h2>
+							  	<ul>
+								  	<li> Harney and Sons Fine Teas, West Coast Sales </li>
+								  	<li> Japanese Tea Specialist</li>
+								  	<li> Wholesale and Food Service </li>
+								  	<li> Staff and Individual Training </li>
+								  	<li> Private Events </li>
+								  	<li> Instagram: @VegasTeaSomm </li>
+								  	<li> Harney.com </li>
+								  </ul>
+							  </div>
+							</div>
+						</section> 
+						<section class="slides" data-background-size="contain" data-background="img/tea.institute-logo.jpg"></section> 
+					</section>
 
 
 				<section> 
